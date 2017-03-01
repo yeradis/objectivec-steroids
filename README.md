@@ -1,2 +1,2 @@
-# objetivec-steroids
-Just a simple repo to store Objetive-C Categories and Extensions
+# objectivec-steroids
+Just a simple repo to store Objective-C Categories and Extensions
