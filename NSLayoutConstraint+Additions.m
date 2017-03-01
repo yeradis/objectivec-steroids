@@ -82,6 +82,13 @@
             return [NSString stringWithFormat:@"%@:%@[%p]", [obj class], [obj accessibilityIdentifier], obj];
         }
     }
+    
+    if ([obj respondsToSelector:@selector(restorationIdentifier)]) {
+        if ([obj restorationIdentifier]) {
+            return [NSString stringWithFormat:@"%@:%@[%p]", [obj class], [obj restorationIdentifier], obj];
+        }
+    }
+    
     if ([obj respondsToSelector:@selector(identifier)]) {
         if ([obj identifier]) {
             return [NSString stringWithFormat:@"%@:%@[%p]", [obj class], [obj identifier], obj];
